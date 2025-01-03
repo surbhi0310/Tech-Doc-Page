@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Languages</header>
+        <ul>
+            <a href="index.html">
+                <li>HTML</li>
+            </a>
+            <a href="index1.html">
+                <li>CSS</li>
+            </a>
+            <a href="index2.html">
+                <li>Javascript</li>
+            </a>
+            <a href="index3.html">
+                <li>Tailwind CSS</li>
+            </a>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="intro_css">
+            <header>Introduction</header>
+            <article>
+                <p>CSS (Cascading Style Sheets) is used to style and layout web pages.
+
+                <ul><h3>Ways to Add CSS -</h3>
+                    <li><b>Inline CSS :-</b> Applied directly within an HTML element using the style attribute.</li>
+                    <li> <b>Internal CSS :-</b> Placed within a style tag inside the head section of an HTML document.</li>
+
+                    <li><b>External CSS :-</b> Linked via a link tag to an external CSS file.</li>
+
+                    <li><b>Cascading Order :-</b> Order of priority: Inline > Internal > External.</li>
+                    <br>
+                    <h3>Comments in CSS - </h3>
+                    <li><b>Single-line Comment:- </b>/*This is a single-line comment */</li>
+                    <li><b>Multi-line Comment:- </b>/* This is a multi-line comment. It can span multiple line */</li>
+                </ul>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="selectors_css">
+            <header>Selectors</header>
+            <article>
+                <ul>
+                    <li>Tagname Selector :- Selects all elements of a specified tag. <br>Ex: p { }</li>
+                    <li>ID Selector :- Selects a single element with a specific ID. <br>Ex: #unique-id { }</li>
+                    <li>Class Selector :- Selects all elements with a specific class. <br>Ex: .class-name { }</li>
+                    <li>Universal Selector :- Selects all elements. <br>
+                        Ex: * { }</li>
+                    <li>Grouping Selector :- Groups multiple selectors to apply the same styles. <br>
+                        Ex: h1, h2, p { }
+                    </li>
+
+                </ul>
+            </article>
+        </section>
+
+
+        <section class="main-section" id="bg_css">
+            <header>Background</header>
+            <article>
+                <ul>
+                    <li>Background-color: ( red, lightblue etc )</li>
+                    <li>Background-image: ( url("...") )</li>
+                    <li>Background-repeat: ( repeat | repeat-x | repeat-y | no-repeat )</li>
+                    <li>Background-attachment: ( scroll | fixed )</li>
+                    <li>Background-position: ( top | bottom | left | right | center | specific length or percentage )
+                    </li>
+
+                </ul>
+                <br>
+                <p><b>Shorthand property - </b>
+                    <br>
+                    background: #f2f2f2 url(...) no-repeat top right
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="text_css">
+            <header>Text-decoration</header>
+            <article>
+                <h3>Text-properties</h3>
+                <ul>
+                    <li>text-align: ( center | left | justify ..)</li>
+                    <li>text-transform: ( capitalize | uppercase..)</li>
+                    <li>letter-spacing: ( 2px )</li>
+                    <li>word-spacing: ( 2px )</li>
+                    <li>color: (red, blue..)</li>
+                    <li>line-height: ( 380px )</li>
+                    <li>text-indent: 60px</li>
+                    <li>text-shadow: (offset-y | blur-radius | color...)</li>
+                    <li>direction: ltr | rtr(left-to-right text direction)</li>
+                    <li>vertical-align: ( text-top |sup | bottom )</li>
+                    <p><b>Shorthand property - </b>
+                        <br>
+                        text-decoration: text-decoration-line color style thickness(underline blue wavy 20px)
+
+                    </p>
+                    <br>
+                    <li>white-space: nowrap</li>
+                    <li>overflow: hidden</li>
+                    <i> above two properties are required for this</i>
+                    <li>text-overflow: ( clip | ellipsis | string..)</li>
+
+                </ul>
+                <br>
+
+                <h3>Font Properties</h3>
+                <ul>
+                    <li>font-family: (Courier, Arial, Times...(family-name,generic-family, initial, inherit) )</li>
+                    <li>font-style: ( itlic | normal..)</li>
+                    <li>font-variant: ( normal | small-caps )</li>
+                    <li>font-size: ( 20px )</li>
+                    <li>font-weight: (normal, lighter, bolder, bold, number, inherit, initial, unset)</li>
+
+                </ul>
+                <p><b>Shorthand property - </b>
+                    <br>
+                    font: font-style, font-variant, font-weight, font-size/line-
+                    height, font-family(italic normal bold 16px/1.5 "Helvetica Neue", Arial, sans-serif)
+
+                </p>
+
+            </article>
+        </section>
+        <section class="main-section" id="var_css">
+            <header>CSS Variables</header>
+            <article>
+                <p>:root {<br>
+                    --teal: #031634 <br>
+                    --cobalt: #033649 <br>
+                    --turquoise: #066464 <br>
+                    --beige: #CEB288 <br>
+                    --gold: #EADDCC
+                    }
+                    <br>
+                <p>body{<br>
+                    background-color: var(--teal)
+                    }
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="style_list_css">
+            <header>Styling List & Table</header>
+            <article>
+                <h3>List Styling</h3>
+                <ul>
+                    <li>list-style-type: (circle, disk, square, lower-alpha none)</li>
+                    <li>list-style-image: url("...")</li>
+                    <li>list-style-position: (inside, outside)</li>
+                </ul>
+                <p><b>Shorthand property - </b>
+                    <br>
+                    list: list-style-type, list-style-position, list-style-image
+                </p>
+                <br>
+                <h3>Table Styling</h3>
+                <ul>
+                    <li>border: (1px solid black)</li>
+                    <li>border-collapse: collapse</li>
+                    <li>caption-side: bottom</li>
+                    <li>empty-cells: hide</li>
+                    <li>table-layout: (auto, fixed)</li>
+                    <li>border-spacing: 10px 20px</li>
+                    <li>vertical-align: (baseline, top, middle, bottom)</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="box_model_css">
+            <header>Box Model</header>
+            <article>
+                The CSS box model is a container that contains multiple properties, including borders, margins, padding,
+                and
+                the content itself.
+                <p>In CSS, whenever we visualize any HTML element,we nshould visualise it in the form of a rectangular
+                    box.
+                    The rectangular box of HTML elements has got 4 parts.
+                    <br>
+                <ul>
+                    <li>Content</li>
+                    <li>Padding -
+                        padding: 12px 4px 3px 20px (top,right,bottom,left)</li>
+                    <li>Border -
+                        <p> border-style: solid(none, solid, dashed, dotted, groove) <br>
+                            border-width: 2px(3pt,4cm,thick,thin,medium) <br>
+                            border-color: black <br>
+                            border-radius: 20px <br>
+                            <b>Shorthand property - </b>
+                            <br>
+                            border: 5px solid black (border-size border-style border-color)
+                        </p>
+                    </li>
+                    <li>Margin -
+                        margin: 10px 20px 12px 13px
+                        margin:auto(whatever the space left in the parent element it take it as margin.)
+                    </li>
+                </ul>
+                <div class="img_css">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKVo6QbmGPPOZprStruFxCYzsVL5q_jJ38mw&s.svg"
+                        alt="Box Model">
+                </div>
+                Box model - <br>
+                1. <b>Content-box</b>(by default) -> In this width = content box only <br>
+                2. <b>Border-box</b> -> In this width = content box + padding + border
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="width_height_css">
+            <header>Width and Height in CSS</header>
+            <article>
+                <p>Width and height property can help us to manually set the width/height of any element altogether.
+                    <br>
+                <ul>
+                    <li>width: 300px </li>
+                    <li>min-width: 500px</li>
+                    <li>max-width: 200px</li>
+                    <li>height: 150px</li>
+                    <li>min-height:300px</li>
+                    <li>max-height:200px</li>
+                </ul>
+                <h3>Box sizing</h3>
+                <p>The box-sizing property sets how the total width and height of an element are calculated.
+                    <br>
+                    box-sizing: content-box(by default)/border-box
+                </p>
+
+                Value:
+                <ul>
+                    <li>specific-value(100px)</li>
+                    <li>percentage(_% of the parent element)</li>
+                    <li>initial(default value)</li>
+                    <li>inherit</li>
+                    <li>auto</li>
+                </ul>
+                For block elements like div, if we give auto it expands the width to fill the entire hortizontal space
+                till the corner.
+                <br>
+                For inline elements like span, if we giveauto it expand width to the content width only.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="units_css">
+            <header>CSS Units</header>
+            <article>
+                <p>CSS Units define the metric using which we put the size and length and dimensions of our HTML
+                    Elements.-
+                    Two types of css units are - <br>
+                    1. <b>Absolute Units</b> <br>These are the fixed-length units, they stay unchanged
+                    regardless of the device configuration. <br>
+                <ul>The Absolute unit types consist of -
+                    <li>Pixels(px)</li>
+                    <li>centimeters (cm) - 1cm = 37.8px(roughly)</li>
+                    <li>Millimetres(mm) - 1mm = 3.78px(roughly)</li>
+                    <li>inches(in) - 1in = 96px = 2.54cm(roughly)</li>
+                    <li>Points(pt) - 1pt = 1.3333px(roughly)</li>
+                    <li>Picas(pc)
+                        - 1pc = 16px (roughly)
+                    </li>
+                </ul>
+                <br>
+                2. <b>Relative Units</b> <br> Relative units are good for styling the responsive site because they scale
+                relative to the window size
+                or the parent (depending on the unit).
+                <ul>The Relative unit types consist of -
+                    <li>percentage(%) - relative to the parent element's value.</li>
+                    <li>parent element's font size(em) - relative to the font size of the parent element.</li>
+                    <li>root element's font size(rem) - relative to the font- size of the root element.</li>
+                    <li>viewport height(vh) - relative to the height of the viewport. (1vh = 1%)</li>
+                    <li>viewport width(vw) - relative to the width of the viewport. (1vw = 1%)</li>
+                    <li>viewport minimum(vmin) - relative to the smaller dimension of the viewport </li>
+                    <li>viewport maximum(vmax) - relative to the larger dimension of the viewport. 1vmax = 1%</li>
+                    <li>character(ch)</li>
+                    <li>X-height(ex)</li>
+                </ul>
+
+                </p>
+            </article>
+        </section>
+
+
+<!-- module-2 -->
+
+
+        <section class="main-section" id="DOM_css">
+            <header>DOM (Docment Object Model)</header>
+            <article>
+                <p>Internals of CSS (how html, css, js code runs on browser whenever loads a page)
+                    <ol>There are 5 steps / CRP(Critical Rendering Path)
+                        <li><b>Parse HTML:-</b></li>
+                        <ul>
+                            <li>To parse the HTML, browser first of all tokenizes(convert html tags to html elements) our HTML.</li>
+                            <li>Browser creates html elements with these tokens and then connect them in a <b>tree like structure to create DOM.</b></li>
+                        </ul>
+                        <li><b>CSS Parsing:-</b></li>
+                        <ul>
+                            <li>Browser parses CSS in a similar way, tokenize it and create <b>a tree like structure called as CSSOM.</b></li>
+                            <li>Browser executes an internal algorithm called as SELECTOR MATCHING(SM).</li>
+                            <li>SM decides the final set of styles which will be applied to any element.</li>
+                        </ul>
+                        <img src="DOM img.webp" alt="">
+                        <li><b>Render Tree:-</b></li>
+                        <ul>
+                            <li>Final tree created by combination og DOM & CSSOM.</li>
+                            <li>It contains only those html elements/nodes which are finally going to be rendered. </li>
+                        </ul>
+                        <li><b>Layout(Reflow Stage):-</b></li>
+                        <ul>
+                            <li>Browser uses the render tree & then starts calculating measurements & actual position on the page where the elements need to come.</li>
+                        </ul>
+                        <li><b>Painting Step</b></li>
+                    </ol>
+        </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="layout_css">
+            <header>CSS Layout</header>
+            <article>
+                <p>CSS layout refers to the process of positioning and arranging elements on a web page using Cascading
+                    Style Sheets (CSS).
+                    <h3>Layout Techniques - </h3>
+                    <ol>
+                        <li>Normal Layout</li>
+                        <li>Float</li>
+                        <li>Flex</li>
+                        <li>Grid</li>
+                        <li>Table</li>
+                    </ol>
+            </article>
+        </section>
+
+        <section class="main-section" id="positioning_css">
+            <header>CSS Positioning</header>
+            <article>
+                <p>CSS Positioning refers to the process of controlling the position of elements on a webpage using CSS.
+                    <h3>Positioning Techniques - </h3>
+                    <ol>
+                        <li>Static(by default)</li>
+                        <li>Relative</li>
+                        <li>Absolute</li>
+                        <li>Fixed</li>
+                        <li>Sticky</li>
+                    </ol>
+            </article>
+        </section>
+
+        <section class="main-section" id="display_&_visibility">
+            <header>Display and Visibility</header>
+            <article>
+                    <h3>Display Property - </h3>
+                    <ol>
+                        <li><b>Block</b> (Creates a block level element, starts onto a new line, expands horizontally if width is not defined)</li>
+                        <li><b>Inline</b> (Creates an inline level element, box will remain on the same line, Vertical Padding, margins, and borders won't take effect)</li>
+                        <li><b>Inline-block</b> (combines characteristics of both inline and block elements, allows to set a width and height, the top and bottom margins/paddings are respected)</li>
+                        <li><b>None</b> (used to make an element invisible, the element will not take
+                            any space in the document.)</li>
+                        <li><b>Table</b></li>
+                        <li><b>Inline-table</b></li>
+                        <li><b>Flex</b></li>
+                    </ol>
+            </article>
+        </section>
+
+        <section class="main-section" id="css_grids">
+            <header>CSS Grids</header>
+            <article>
+                <h4>To control the orientation of the grid container i.e number of columns and rows, along with size of each column and row we need to master 3 important properties - </h4>
+                    <ul>
+                        <li>grid-template-row: 20% 30%</li>
+                        <li>grid_template-column: 120px 100px 80px</li>
+                        <li>grid-auto-flow: row(default value)/column</li>
+                <p><b>CSS Grid Tracks</b> refers to the space b/w adjacent grid lines (horizontal or vertical anyone)</p>
+
+                <p><i>Note:</i> To specify size of a row or column we can use fractional units as well.</p>
+                <p>Fractional Units(fr):- grid-template-row: 1fr 2fr 2fr(1/5 2/5 2/5)</p> 
+
+                <h4>CSS Grid Functions:-</h4>
+                <li>grid-column-template: <b>repeat(4, 1fr)</b></li>
+                <p>No.of tracks(rows/columns), size of track</p>
+                <li>grid-column-template: <b>100px minmax(100px,200px) 100px</b></li>
+                
+                <h4>CSS Intermediate</h4>
+                <li>grid-gap: 2rem</li>
+                <li>grid-row-gap: </li>
+                <li>grid-column-gap: </li>
+                <li>align-content: stretch(default),center,end,space-evenly..</li>
+                <li>grid-auto-flow: column/row</li>
+                <li>grid-template-area and grid-area: <br>
+                <i>Example - <a href="holy_grail_grids.html">Holy Grail UI</i></a></li>
+            </ul>
+
+            </article>
+        </section>
+
+        <section class="main-section" id="Advancedselectors_css">
+            <header>Advanced CSS Selectors</header>
+            <article>
+                <ul>
+                    <li>Type Selector/Tag Selector - <b>div</b> selects all div elements</li>
+                    <li>Id Selector - <b>#cool</b> selects any element with id="cool"</li>
+                    <li>Descendant Selectors - <b>p strong</b> selects all strong elements that are inside p.</li>
+                    <li></li>
+                </ul>
+            </article>
+        </section>
+
+
+
+
+        <section class="main-section" id="vs_ext_css">
+            <p>CSS Gradient Property:- to add gradient bg color.</p>
+            <header>Useful VS Code Extensions</header>
+            <article>
+                <p>
+
+                    CSS Peek :- Allows you to see the CSS code directly in the HTML file. <br>
+                    Color Highlight :- Highlights colors in your CSS files. <br>
+                    Image Preview :- Shows image previews when you hover over image URLs. <br>
+                    HTML CSS Support :- Provides CSS class and ID completion support in HTML files. <br>
+                    HTML to CSS Autocompletion :- Auto-completes CSS properties and values. <br>
+                    Stylelint :- Checks your CSS for errors and helps you follow best practices. <br>
+                    Intellisense for CSS Class Names :-Suggests class names that are already defined in your project.
+                </p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Languages</header>
+        <ul>
+            <a href="index.html">
+                <li>HTML</li>
+            </a>
+            <a href="index1.html">
+                <li>CSS</li>
+            </a>
+            <a href="index2.html">
+                <li>Javascript</li>
+            </a>
+            <a href="index3.html">
+                <li>Tailwind CSS</li>
+            </a>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="intro_tailwind">
+            <header>Introduction</header>
+            <article>
+                <p>Tailwind CSS is an <b>open-source CSS framework, a utility-first CSS framework with predefined classes</b> that you can use to build and design web pages directly in your markup language.
+
+                <ul><h3>Benefits -</h3>
+                    <li><b>Inline CSS :-</b> Applied directly within an HTML element using the style attribute.</li>
+                    <li> <b>Internal CSS :-</b> Placed within a style tag inside the head section of an HTML document.</li>
+
+                    <li><b>External CSS :-</b> Linked via a link tag to an external CSS file.</li>
+
+                    <li><b>Cascading Order :-</b> Order of priority: Inline > Internal > External.</li>
+                    <br>
+                    <h3>Limitations - </h3>
+                    <li>Learn Curve</li>
+                    <li>Messy HTML</li>
+                    <li>Limited Customization</li>
+                    <li>Not Fancy out-of-box</li>
+                    <li>No Javascript</li>
+                    <li>Lots to remember</li>
+                    <li>Style consistency pressure</li>
+                </ul>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="tailwind_vs_bootstrap_tailwind">
+            <header>Tailwind V/S Bootstrap</header>
+            <article>
+                <table border="2">
+                        <tr>
+                            <th>Tailwind</th>
+                            <th>Bootstrap</th>
+                        </tr>
+                        <tr>
+                            <td>It declares a block-scoped local variable.</td>
+                            <td>It declares a function-scoped variable or globally-scoped variable. <br>
+                            function fun(){var y = 10;} //not accessible outside as we know function creates scope.</td>
+                            <td>it declares block-scoped constants much like in let</td>
+                        </tr>
+                        <tr>
+                            <td>wherever we declare with let it can be accessible below it only.</td>
+                            <td> It can be accessible throughout the function</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>We can update it's value</td>
+                            <td>We can update it's value</td>
+                            <td>We cannot update it's value.It will throw us error.</td>
+                        </tr>
+                    </table>
+            </article>
+        </section>
+
+        <section class="main-section" id="extensions_tailwind">
+            <header>Extensions </header>
+            <article>
+                <ul>
+                    <li>Tailwind IntelliSence(official) - <p>used when we have tailwind via npm(Node package mngmnt)</p>
+                    <li>WindiCSS IntelliSence - </li><p>we can use this using either cdn or npm approach</p></li>
+                    <li>WindiCSS Analyzer</li>
+                    <li>Headwind - </li><p>class sorter</p>
+                </ul>
+                </p>
+                <h4>Features of WindiCSS</h4>
+                <ul>
+                    <li>Syntax Highlight</li>
+                    <li>Hover Previews</li>
+                    <li>Color Previews</li>
+                    <li>Auto-complete</li>
+                </ul>
+            </article>
+        </section>
+</body>
+</html>

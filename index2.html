@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Languages</header>
+        <ul>
+            <a href="index.html">
+                <li>HTML</li>
+            </a>
+            <a href="index1.html">
+                <li>CSS</li>
+            </a>
+            <a href="index2.html">
+                <li>Javascript</li>
+            </a>
+            <a href="index3.html">
+                <li>Tailwind CSS</li>
+            </a>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <b>####Introduction, history, version, how to run js####</b>
+        <section class="main-section" id="intro_js">
+            <header>Introduction</header>
+            <article>
+                <a href="https://blog.jetbrains.com/wp-content/uploads/2024/07/JavaScript-Roadmap-Highres.png">Javascript Roadmap</a>
+                <p>Javascript is a programming language. JS has got a decision making capabilities. JS is a high-level programming language(we can interact with JS with a very human readable and understandable code.) It is neither purely compiled nor interpreted so we can say it is hybrid. 
+                    <ul>
+                        <li>High-level language</li>
+                        <li><b>Dynamically-typed language</b>, which means that you don't have to specify the type of a variable when you
+                            declare it,</li>
+                    </ul>
+                <br>
+                <br>
+                <h3>Keywords in JS</h3>
+                    <p>Keywords are reserved words. <br>
+                    Ex - let, const, var, if, return, for, while etc.</p> <br>
+                <ol>
+                    <h3>Comments</h3>
+                    <p>Extra piece of notes that we write along with the code to understand the code. Interestingy these will be completely avoided when JS will exeute the code. </p>
+                <ol>
+                    <li>Single Line Comment(//...)</li> 
+                    <li>Multiline Comment(/*...*/)</li>
+                </ol>
+                </p>
+            </article>
+        </section>
+
+<b>#### Variable declarations, Hoisting, Var Naming rules, Scopes</b>
+        <section class="main-section" id="var_js">
+            <header>Variables</header>
+            <article>
+
+                <p>Variables are the containers that store some values inside the memory(RAM).Variable container created in the memory is allocated a unique name is called as variable name.
+                    <h4>3 Keywords(are reversed words) to create a variable / <em>Variable Declaration</em></h4>
+                    <table border="2">
+                        <tr>
+                            <th>let</th>
+                            <th>var</th>
+                            <th>const</th>
+                        </tr>
+                        <tr>
+                            <td>It declares a block-scoped local variable.</td>
+                            <td>It declares a function-scoped variable or globally-scoped variable. <br>
+                            function fun(){var y = 10;} //not accessible outside as we know function creates scope.</td>
+                            <td>it declares block-scoped constants much like in let</td>
+                        </tr>
+                        <tr>
+                            <td>wherever we declare with let it can be accessible below it only.</td>
+                            <td> It can be accessible throughout the function</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>We can update it's value</td>
+                            <td>We can update it's value</td>
+                            <td>We cannot update it's value.It will throw us error.</td>
+                        </tr>
+                    </table>
+                    <h4>Hoisting</h4>
+                    <p>.........</p>
+
+                    <h4>Rules to put variables name:</h4>
+                    <ol>
+                        <li>It must start with a letter or an underscore or dollar sign.</li>
+                        <li>Cannot start with a number.</li>
+                        <li>Variable names are Case sensitive</li>
+                        <li>Should not have special characters apart from underscore, number or dollar.</li>
+                        <li>Cannot be a keyword</li>
+                        <li>Use camel case like movieName(Recommendations for putting variable name)</li>
+                    </ol>
+                    <h4>Variable Scopes- </h4>
+                    <ol>
+                        <li>Block</li>
+                        <li>Function</li>
+                        <li>Global</li>
+                    </ol>
+                    <i>Note:-</i><ul>
+                        <li>If variable is empty js will automatically assign a value called as undefined.</li>
+                        <p>There is a strict mode("use strict") which is a restricted mode like content = "js" gives an error in strict mode but in unstrict mode it will act as a auto global scope</p>
+                    </ul>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="datatypes_js">
+            <header>Datatypes</header>
+            <article>
+                <p>Datatypes is the classification of types of data that can be stored in the memory. 
+                <br>
+                <p>1 to 7 are primitive datatypes</p>
+                <ol>
+                    <li>String</li> - Bunch of words/Texts wrapped inside a pair of single or double quotes or backticks(` `).
+                    <li>Number</li> - To represent any numeric value like integers, zero, real numbers etc.
+                    <li>Boolean</li> Represent two state values true or false.
+                    <li>Bigint</li> Very big numbers that are not by deafut supported by number datatype.(eg - 278682698279729898222n)
+                    <li>Undefined</li> Represents absence of a value (0)
+                    <li>Null</li> Represents No value or nothing.
+                    <li>Symbol</li> Are wrappers over other datatypes like strings which help us to make different string with same value.
+                    <li>Object</li> Objects are nothing but a collection of key value pairs kept together. The keys are always unique and will be having some values associated.
+                    <li>typeof operator</li>
+                </ol>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="typecasting_js">
+            <header>Type Casting</header>
+            <article>
+                <p>...</p>
+                <table border="2">
+                    <tr>
+                        <th>Type Casting</th>
+                        <th>Coercion</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p><b>Explicit Type Casting - </b></p>
+                <p><b>Implicit Type Casting - </b></p>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="datastructures_js">
+            <header>Data Structures</header>
+            <article>
+                <p>......
+                <br>
+                <ol>
+                    <li>Indexed collection
+                        <ul>
+                            <li>Arrays</li>
+                            <li>Typed Array(optional)</li>                      
+                        </ul>
+                    </li>
+                    <li>Keyed Collection
+                        <ul>
+                            <li>Map</li>
+                            <li>Weak Map</li>
+                            <li>Set</li>
+                            <li>Weak Set</li>
+                        </ul>
+                    </li>
+                    <li>Structured Data
+                        <ul>JSON</ul>
+                    </li>
+                </ol>
+                </p>
+            </article>
+        </section>
+
+        <section class="main-section" id="Loops_js">
+            <header>Loops and Iterations</header>
+            <article>
+                <ul>
+                    <li>for statement</li>
+                    <li>do...while statement</li>
+                    <li>While statement</li>
+                    <li>for...in statement</li>
+                    <li>for...of statement</li>
+                    <li>break/continue</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="controlflow_js">
+            <header>Conditionals and Loops</header>
+            <article>
+                <ol>
+                <li>Conditional Statements
+                    <ul>
+                    <li>if</li>
+                    <li>if else</li>
+                    <li>Nested if</li>
+                    <li>if else if ladder</li>
+                    <li>Switch</li>
+                    </ul>
+                </li>
+                <li>Exception Handling
+                    <ul>
+                        <li>Throw statement</li>
+                        <li>try/catch/finally</li>
+                        <li>Utilizing Error Object</li>
+                    </ul>
+                </li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="main-section" id="operators_js">
+            <header>Expressions and Operators</header>
+            <article>
+                <ol>
+                    <li>Arithmetic -> % ** + - * / ++(pre/post increment) --(pre/post decrement)</li>
+                    <li>Assignment -> %= **= += -= /= *=</li>
+                    <li>Comparison(Relational) -> == ===(strict equal) != !== > >= < <= </li>
+                    <li>Logical -> && || ! </li>
+                    <li>Bitwise -> &, |, ^(Bitwise XOR), ~(Bit NOT), <<(left shift), >>(right shift)</li>
+                    <li>BigInt</li>
+                    <li>String</li>
+                    <li>Conditional</li>
+                    <li>Comma</li>
+                    <li>Unary</li>
+                    <li>Relational</li>
+                </ol>
+                <b><i>Difference between
+                    == and ===
+                    operators and operands</i></b>
+                </p>
+            </article>
+        </section>
+        
+        <section class="main-section" id="functions_js">
+            <header>Functions</header>
+            <article>
+                <ol>
+                    <li>Function Parameters
+                        <ul>
+                            <li>Default Params</li>
+                            <li>Rest Params</li>
+                        </ul>
+                    </li>
+                    <li>Arrow Functions</li>
+                    <li>IIFEs</li>
+                    <li>Argument Object</li>
+                    <li>Scope & Function Stack
+                        <ul>
+                            <li>Recursion</li>
+                            <li>Lexical Scoping</li>
+                            <li>Closures</li>
+                        </ul>
+                    </li>
+                    <li>Built-in-Functions</li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="main-section" id="strict_js">
+            <header>Strict Mode</header>
+            <article>
+                <p>....</p>
+            </article>
+        </section>
+
+        <section class="main-section" id="this_js">
+            <header>Using (this) Keyword</header>
+            <article>
+                <ul>
+                    <li>in a method</li>
+                    <li>in a function</li>
+                    <li>using it alone</li>
+                    <li>in event handler</li>
+                    <li>in arrow functions</li>
+                    <li>Function Borrowing</li>
+                    <li>Explicit Binding(call, apply, bind)</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="main-section" id="async_js">
+            <header>Asynchronous Javascript</header>
+            <article>
+                <ol>
+                    <li>Callbacks
+                        <ul><li>Callback Hell</li></ul>
+                    </li>
+                    <li>Promises
+                        <ul><li>async / await</li></ul>
+                    </li>
+                    <li>setTimeout</li>
+                    <li>setInterval</li>
+                    <li>Event Loop</li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="main-section" id="arrays_js">
+            <header>Arrays</header>
+            <article>
+                <ul>
+                    <li>Arrays are linear data structure that stores ordered list of elements.</li>
+                    <li>Holds elements of any datatypes(number, string, objects..) and even other arrays.</li>
+                    <li>Are type of object in js & have no. of built-in methods for adding, removing, and manipulating elements.</li>
+                </ul>
+                <ol><p>Why do we need arrays - </p>
+                    <li>Grouping related data</li>
+                    <li>Storing large amount of data.</li>
+                    <li>Better Readability</li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="main-section" id="objects_js">
+            <header>Objects</header>
+            <article>
+                <ul>
+                    <li>An object is an entity(properties and methods) with a certain state and behavior. Ex - a car, pen , bicycle, glass, keyboard.</li>
+                    <li>Object can contains many values.</li>
+                    <li>Object values are written as key:value pairs.</li>
+                </ul>
+                <table border="2">
+                    <tr>
+                        <th>Variables</th>
+                        <th>Objects</th>
+                    </tr>
+
+                    <tr>
+                        <td>A named stored location which holds a value.</td>
+                        <td>A name given to a User-defined variables.</td></tr>
+
+                    <tr>
+                        <td>Can be initialized in a usual manner.</td>
+                        <td>Are declared and initialized as per developer's wish.</td></tr>
+
+                    <tr>
+                        <td>Can contain only one value at a time.</td>
+                        <td>Contains multiple values.</td></tr>
+
+                    <tr>
+                        <td>Ex - let name, var age</td>
+                        <td>Ex - let person = {firstName:"ABC", lastName:"XYZ", age:20}</td>
+                    </tr>
+
+                </table>
+                <p><b>[[Prototypes]] - </b>Js Objects have special property called Prototypes that is either null or references another object. We can set it by setting __proto__ </p>
+                <ol><p>Why do we need arrays - </p>
+                    <li>Grouping related data</li>
+                    <li>Storing large amount of data.</li>
+                    <li>Better Readability</li>
+                </ol>
+            </article>
+        </section>
+
+
+        <section class="main-section" id="classes_js">
+            <header>Classes</header>
+            <article>
+                <ul>
+                    <li>Serves as a blueprint for creating object, providing a way to organise and structure data.</li>
+                    <li>They allow you to define objects with similar properties and methods in a reusable manner.</li>
+                </ul>
+                <ol><p>Reasons Why you might want to use js:: </p>
+                    <li><b>Object-Oriented Programming</b></li>
+                    <li><b>Reuability</b></li>
+                    <li><b>Abstraction</b></li>
+                    <li><b>Encapsulation</b></li>
+                    <li><b>Modularity</b></li>
+                    <li>Classes were introduced in ECMAScript(ES6)</li>
+                    <li>A class is defined using the class keyword followed by the class name, and a block of code that defines the properties and methods.</li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="main-section" id="dom_manipulation_js">
+            <header>DOM Manipulation</header>
+            <article><u><i>(One of the fundamental usecase of JS)</i></u>    
+                <p>When we say maipulating the dom, we mean that using JS we should be able to control what elements are being added/removed to the DOM, how they behave in terms of user interaction, how their look and feel is and everything else related to these HTML elements.</p>
+                <h3>How to acheive DOM Manipulation?</h3>
+                <p>So, our browsers provide us a lot of functions and objects using which we can control whole DOM. Important thing t note is that these functions are not nativeto JS, instead they are provided by the browser (which is the runtime environment).</p>
+                <ol><p>Some of the most important functions are:- </p>
+                    <li><b>document.getElementById</b></li>
+                    <li><b>document.getElementByClass</b></li>
+                    <li><b>document.getElementByTagName</b></li>
+                    <li><b>document.querySelector</b></li>
+                    <li>and more...</li>
+                    <p>Browsers provide us a very imp object which is globally present everywherein the browser's JS, called <b>document.</b>
+<br>It Contains a lot of methods and properties using which we can manipulate the DOM.
+                    </p>
+                </ol>
+
+                <h3>Event Driven Programming</h3>
+                <p>Events are some actions or interactions done by an external agent(may be the user).</p>
+                <br>For Ex- Clicking the buttton, scrolling, moving the mouse and so on.
+                <p>When we click a button an event is triggered --> So react on these actions, we write logic which will only execute when these actions are triggered. And the Programming paradigm where are logic/code runs as a reaction/response to these events is called as <b>Event driven programming.</b></p>
+                <h4>htmlElement.addEventListener - A method</h4>
+                    <ul>It takes two arguments -
+                        <li>
+                           Name of the Event - click,dblclick,mouseover, scroll etc.
+                        </li>
+                        <li>Callback function which will be executed once the event is triggered.</li>
+                    </ul>
+            </article>
+        </section>
+
+
+</body>
+</html>
