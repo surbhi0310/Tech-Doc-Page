@@ -33,8 +33,12 @@
         <section class="main-section" id="intro_js">
             <article>
                 <h3>Single Page Application(SPA)</h3>
-                <p>These are special web apps in which we only have one html page that is rendered.Any content we have to render or any interactivity, even going from one page to another all handled by js only.Interesting part is the app doesn't refresh while interacting or moving from one pg to another.</p>
-                <p>When we write code in plain <B>Vanilla js</B>(normal js) the problem with this exist is- repetitive code; it's very hard to manage</p>
+                <p>These are special web apps in which we only have one html page that is rendered.Any content we have
+                    to render or any interactivity, even going from one page to another all handled by js
+                    only.Interesting part is the app doesn't refresh while interacting or moving from one pg to another.
+                </p>
+                <p>When we write code in plain <B>Vanilla js</B>(normal js) the problem with this exist is- repetitive
+                    code; it's very hard to manage</p>
                 Angular - google
                 ember js - linkedin
                 react - meta(facebook)
@@ -44,9 +48,97 @@
         <header>What is React?</header>
         <section>
             <article>
-                <p>React is a JS library, it comes with a bare minimum set of functionalities using which we can make mordern SPA with ease. It doesn't bring a lot of conventions or baggage with it , and gives just the required functionalities for an SPA. </p>
-                <p>This is a <b>problem of react</b> also, that for a lot of things we have rely on third party Solutions/libraries.</p>
-                <hr>
-                <b>React helps us to divide our UI into a set of reusable components </b><p>So react says, that just identify any piece of UI which is reusable in your page and make it a component(a resusable piece of UI implemented using react that we just plug and play anywhere in our UI. Components follow DRY Pinciple(do not repeat same piece of ui) heavily</p>
+                <p>React is a JS library, it comes with a bare minimum set of functionalities using which we can make
+                    mordern SPA with ease. It doesn't bring a lot of conventions or baggage with it , and gives just the
+                    required functionalities for an SPA. </p>
+                <p>This is a <b>problem of react</b> also, that for a lot of things we have rely on third party
+                    Solutions/libraries.</p>
+                <br>
+                <b>React helps us to divide our UI into a set of reusable components </b>
+                <p>So react says, that just identify any piece of UI which is reusable in your page and make it a
+                    component(a resusable piece of UI implemented using react that we just plug and play anywhere in our
+                    UI. Components follow DRY Pinciple(do not repeat same piece of ui) heavily</p>
+                <h4>How to get started with React?</h4>
+                <p>Tools to setup react -> create-react-app; NextJS; Vite</p>
+
+                <h4>Steps to setup React project with Vite: </h4>
+                <ul>Do all this in terminal
+                    <li>Execute npm create vite@latest in </li>
+                    <li>it asks for installation of create-vite say a yes(y)</li>
+                    <li>Then it will ask for project-name, package name</li>
+                    <li>Then select the "React" framework and Javascript as variant</li>
+                    <li>And that's it you have your brand new react project with you.</li>
+                    <li>Go insite the react projectby doing cd "name of the project"</li>
+                    <li>Install dependencies "npm install"</li>
+                    <li>run the react server using "npm run dev"</li>
+                </ul>
+                <h2>Let's discuss project structure:- </h2>
+                <p>Let's go over every folder and file one by one:</p>
+                <ul>
+                    <li><b>package.json: </b>It is the most important files which contain metadata about the project. It
+                        tells important details of the project like
+                        <i>name of project, version of project(self configurable), scripts, it also tells the
+                            dependencies which our project has. </i>For eg: dev script written is executed when we
+                        execute npm run dev.
+                    </li>
+                    <li><b>node_modules: </b>This folder contains the downloaded dependency codes. For eg: we have
+                        eslint react etc as dependency of the project</li>
+                    <li><b>pakage-lock.json: </b>Now the dependencies we installed also have inner denpendencies, so
+                        this file keeps the version details of al the dependencies and inner dependencies.So, if we
+                        loose node_modules we can download the same version of everything because of this.</li>
+                    <li><b>gitignore:</b>This file contains all the files and folders that we don't wat to upload on
+                        github once we upload the project on github.</li>
+                    <li><b>eslintrc:</b>This files keeps the eslint configuration.</li>
+                    <li><b>vite.config.js:</b>This file keeps the react configuration.</li>
+                    <li><b>public:</b>Any static file like pdfs, images etc goes here.</li>
+                    <li><b>src:</b>Your Actual code is present.</li>
+                </ul>
+
+            </article>
+        </section>
+
+        <header>JSX</header>
+        <section>
+            <article>
+                <p>JSX(extension to js) is an extention to XML, that's why the syntax of JSX looks extremely similar to
+                    XML and HTML (HTML is also a derivative of XML only). Meta prepared JSX for making the UI
+                    implementation more easy, because using plain JS functions that React and other technologies provide
+                    can make the code unreadable. And with JSX, because it is a very HTML like syntax it becomes easy.
+                <h4>Features</h4>
+                <ul>
+                    <li>Looks and feels like HTML.</li>
+                    <li>Has some minor differences compared to HTML.</li>
+                    <li>Writing complex UI logic is easy with JSX.</li>
+                    <li>Get's easily embedded with any JS code as well i.e in the same file we can write JS and JSX
+                        together.</li>
+                </ul>
+                Meta didn't intent to get JSX compatibility added in the browser or in EcmaScript but they intent that
+                there should be a layer of transpilation that can convert JSX to normal JS code.</p>
+
+                <!-- <h4>Example code for JSX:</h4>
+                Using JSX to express UI components
+                    var dropdown =
+                      <Dropdown>
+                        A dropdown list
+                        <Menu>
+                          <MenuItem>Do Something</MenuItem>
+                          <MenuItem>Do Something Fun!</MenuItem>
+                          <MenuItem>Do Something Else</MenuItem>
+                        </Menu>
+                      </Dropdown>; -->
+                <h4>Transpilation</h4>
+                <p>It is the process of converting src code from one high-level programming languagr to another.
+                    We use transpiler like <b>Babel</b> to convert JSX to compatible JS.To use JSX we need to make aa
+                    file with .jsx extension.
+                </p>
+                <h3>Components</h3>
+                <p>As we know componenets are reusable UI elements. And in normal proramming, functions helps us to put
+                    reusable piece of code at one place.
+                </p>
+                <p>Now, In a react code base if we have a function that returns some kind of JSX, we will call that a
+                    <b>Component or more specifically a Functional Component</b> because this component has been made
+                    using functions. <i>We can make components using class also.</i></p>
+                    <b style="color: blueviolet;">Defining a function</b>
+                    <b style="color: blueviolet;">Calling a function</b>
             </article>
         </section>
