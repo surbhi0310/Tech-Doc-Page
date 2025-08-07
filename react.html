@@ -32,7 +32,7 @@
     <main id="main-doc">
         <section class="main-section" id="intro_js">
             <article>
-                <h3>Single Page Application(SPA)</h3>
+                <h2>Single Page Application(SPA)</h2>
                 <p>These are special web apps in which we only have one html page that is rendered.Any content we have
                     to render or any interactivity, even going from one page to another all handled by js
                     only.Interesting part is the app doesn't refresh while interacting or moving from one pg to another.
@@ -53,16 +53,22 @@
                     required functionalities for an SPA. </p>
                 <p>This is a <b>problem of react</b> also, that for a lot of things we have rely on third party
                     Solutions/libraries.</p>
+                <ol>Features of React are -
+                    <li>React uses a <b>Virtual DOM</b> to optimize UI rendering. Instead of updating the entire real DOM directly, React</li>
+                    <li>React follows a <b>component-based approach</b>, where the UI is broken down into reusable components.(can be functional & class based</li>
+                    <li>React uses <b>JSX</b>, a syntax extension that allows developers to write HTML inside JavaScript.</li>
+                    <li>React uses <b>one-way data binding</b>, meaning data flows in a single direction from parent components to child components via props.</li>
+                    <li><b>State Management-</b>React manages component state efficiently using the useState hook (for functional components) or this.state (for class components). State allows dynamic updates without reloading the page.</li>
+                    <li><b>Hooks</b> allow functional components to use state and lifecycle features without needing class components.</li>
+                    <li>React provides <b>React Router</b> for managing navigation in single-page applications (SPAs). It enables dynamic routing without requiring full-page reloads.</li>
+                </ol>
+                <p><b>Note:</b> Components follow DRY Principle(do not repeat same piece of ui) heavily</p>
                 <br>
-                <b>React helps us to divide our UI into a set of reusable components </b>
-                <p>So react says, that just identify any piece of UI which is reusable in your page and make it a
-                    component(a resusable piece of UI implemented using react that we just plug and play anywhere in our
-                    UI. Components follow DRY Pinciple(do not repeat same piece of ui) heavily</p>
-                <h4>How to get started with React?</h4>
+                <h3>How to get started with React?</h3>
                 <p>Tools to setup react -> create-react-app; NextJS; Vite(widely used)</p>
 
-                <h4>Steps to setup React project with Vite: </h4>
-                <ul>Do all this in terminal
+                Steps to setup React project with Vite:-
+                <ul>(Do all this in terminal)
                     <li>Execute npm create vite@latest in </li>
                     <li>it asks for installation of create-vite say a yes(y)</li>
                     <li>Then it will ask for project-name, package name</li>
@@ -73,7 +79,8 @@
                     <li>Run the react server using "npm run dev"</li>
                     <li>Then go to your browser and open localhost:5173</li>
                 </ul>
-                <h2>Let's discuss project structure:- </h2>
+                <br>
+                <h3>Let's discuss project structure:- </h3>
                 <p>Let's go over every folder and file one by one:</p>
                 <ul>
                     <li><b>package.json: </b>It is the most important files which contain metadata about the project. It
@@ -113,6 +120,9 @@
                     <li>Get's easily embedded with any JS code as well i.e in the same file we can write JS and JSX
                         together.</li>
                 </ul>
+                
+                <p>JSX is not directly rendered as HTML by React; instead, it gets compiled into JavaScript objects representing virtual DOM elements. These objects are later used by React to efficiently update the real DOM.</p>
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20250730170108961725/how_jsx_works.webp" alt="">
                 Meta didn't intent to get JSX compatibility added in the browser or in EcmaScript but they intent that
                 there should be a layer of transpilation that can convert JSX to normal JS code.</p>
 
@@ -127,11 +137,14 @@
                           <MenuItem>Do Something Else</MenuItem>
                         </Menu>
                       </Dropdown>; -->
+                      
                 <h4>Transpilation</h4>
                 <p>It is the process of converting src code from one high-level programming languagr to another.
                     We use transpiler like <b>Babel</b> to convert JSX to compatible JS.To use JSX we need to make aa
                     file with .jsx extension.
                 </p>
+                
+                
                 <h3>Components</h3>
                 <p>As we know componenets are reusable UI elements. And in normal proramming, functions helps us to put
                     reusable piece of code at one place.
@@ -142,6 +155,7 @@
                     <b style="color: blueviolet;">Defining a function</b>(function App(){return ...})<br>
                     <b style="color: blueviolet;">Calling a function </b> <"App /">(ignore inverted commas) <br>
                     <b>Note: </b>Name of a component must start with a capital letter else it will not work properly.The custom component must be in Pascalcase(like CustomComponent) and inbuilt HTML element based components like div, h1, h2 etc should be in lowercase.
+                    <img style="width: 70%;"src="https://www.patterns.dev/img/reactjs/two-ways.png" alt="">
                     <h4>How to setup Tailwind with vite React project</h4>
             </article>
         </section>
