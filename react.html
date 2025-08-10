@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
+    <title>React JS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -30,7 +30,7 @@
         </ul>
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="intro_js">
+        <section class="main-section" id="spa_react">
             <article>
                 <h2>Single Page Application(SPA)</h2>
                 <p>These are special web apps in which we only have one html page that is rendered.Any content we have
@@ -45,8 +45,9 @@
                 vue js
             </article>
         </section>
+
+        <section class="main-section" id="intro_react">
         <header>What is React?</header>
-        <section>
             <article>
                 <p>React is a JS library, it comes with a bare minimum set of functionalities using which we can make
                     mordern SPA with ease. It doesn't bring a lot of conventions or baggage with it , and gives just the
@@ -105,8 +106,8 @@
             </article>
         </section>
 
+        <section class="main-section" id="jsx_react">
         <header>JSX</header>
-        <section>
             <article>
                 <p>JSX(extension to js) is an extention to XML, that's why the syntax of JSX looks extremely similar to
                     XML and HTML (HTML is also a derivative of XML only). Meta prepared JSX for making the UI
@@ -139,14 +140,18 @@
                       </Dropdown>; -->
                       
                 <h4>Transpilation</h4>
-                <p>It is the process of converting src code from one high-level programming languagr to another.
+                <p>It is the process of converting src code from one high-level programming language to another.
                     We use transpiler like <b>Babel</b> to convert JSX to compatible JS.To use JSX we need to make aa
                     file with .jsx extension.
                 </p>
+            </article>
+        </section>
+
                 
-                
-                <h3>Components</h3>
-                <p>As we know componenets are reusable UI elements. And in normal proramming, functions helps us to put
+            <section class="main-section" id="components_react">
+            <header>Components</header>
+                <article>
+                     <p>As we know components are reusable UI elements. And in normal proramming, functions helps us to put
                     reusable piece of code at one place.
                 </p>
                 <p>Now, In a react code base if we have a function that returns some kind of JSX, we will call that a
@@ -156,6 +161,78 @@
                     <b style="color: blueviolet;">Calling a function </b> <"App /">(ignore inverted commas) <br>
                     <b>Note: </b>Name of a component must start with a capital letter else it will not work properly.The custom component must be in Pascalcase(like CustomComponent) and inbuilt HTML element based components like div, h1, h2 etc should be in lowercase.
                     <img style="width: 70%;"src="https://www.patterns.dev/img/reactjs/two-ways.png" alt="">
+
+                <h3>Props in React Components</h3>
+                    <p>Props(short for properties) are read-only inputs passed from a parent component to a child component.They enable communication between components  and are immutable.</p>
+                <h3>States in React Component</h3>
+                    <img src="https://i.sstatic.net/bwa5H.png" alt="">
+                   <p> The state is a JavaScript object managed within a component, allowing it to maintain and update its own data over time. Unlike props, state is mutable and controlled entirely by the component. State updates trigger re-renders.</p>
+                <h3>Rendering a Component</h3>
+                    <img style="width: 500px;" src="https://ihatetomatoes.net/wp-content/uploads/2017/08/05-reactDOM-render.png" alt="">
+                    <p>Rendering a component refers to displaying it on the browser. React components can be rendered using the ReactDOM.render() method or by embedding them inside other components.</p>
+                <h3>Components in Components</h3>
+                    <p>In React, you can nest components inside other components to build a modular and hierarchical structure.</p>
+
                     <h4>How to setup Tailwind with vite React project</h4>
+
             </article>
         </section>
+
+        <section class="main-section" id="state_react">
+            <header>State</header>
+                <article>
+                    <p>State refers to an object that holds information about a component's current situation.
+                         This information can change over time(<b>Dynamic Data</b>), typically as a result of user actions or data fetching, and
+                         <b>Triggers Re-renders</b>(when state changes, React re-renders the component to reflect the updated UI).</p>
+                    <h3>State v/s Props</h3>
+                    <ul>While both state and props store data in React, they serve different purposes:
+                        <li><b>State:</b> Managed within the component, mutable, and used to store dynamic data that changes over time.</li>
+                        <li><b>Props:</b> Passed from a parent component to a child component, immutable, and used to share data between components.</li>
+                    </ul>
+            </article>
+        </section>
+
+        
+
+        <section class="main-section" id="conditional_rendering">
+            <header>Conditional Rendering</header>
+                <article>
+                    Very Important cover it from Geeks for Geeks
+            </article>
+        </section>
+
+        <section class="main-section" id="virtual_DOM">
+            <header>Virtual DOM</header>
+                <article>
+                    Very Important cover it from Geeks for Geeks
+            </article>
+        </section>
+
+
+        <section class="main-section" id="hooks_react">
+            <header>Hooks</header>
+                <article>
+                    <p>Hooks, introduced in React 16.8, are among the most impactful updates to the library, with over 80% of modern React projects adopting them for state and lifecycle management. They let developers use state, side effects, and other React features without writing class components. Hooks streamline code, improve readability, and promote a functional programming style, making functional components as powerful—if not more—than their class-based counterparts.</p>
+                    <h2>Types of Hooks</h2>
+                    <ol>
+                        <li><h3>State Hooks</h3> State hooks, specifically useState and useReducer , allow functional components to manage state in a more efficient and modular way.</li>
+                            <ul>
+                                <li><b>useState</b>(For managing component-local state.) </li>
+                                <li><b>useReducer</b>(An alternative to useState for more complex state logic. </li>
+                            </ul>
+                            <b>Syntax: </b> <br>
+                             const [state, setState] = useState(initialState); <br>
+                             const [state, dispatch] = useReducer(reducer, initialState);
+
+                            <ul style="color: black;">In this syntax
+                                <li>state: The current state value.</li>
+                                <li>setState: A function that is used to update the state.</li>
+                                <li>initialState: The initial value that the state will hold when the component is first rendered.</li>
+                                <li>dispatch: A function used to dispatch actions that will update the state.</li>
+                                <li>reducer: A function that defines how the state should change based on the dispatched action.</li>
+                            </ul>
+                        <li><h3>Effect Hooks</h3></li>    
+                    </ol>
+            </article>
+        </section>
+               
