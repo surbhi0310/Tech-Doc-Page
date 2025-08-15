@@ -235,4 +235,34 @@
                     </ol>
             </article>
         </section>
+        <section>
+            <div>
+            A.) JSX
+1. Add  Comments in JSX
+To put comments inside JSX, you use the syntax {/* */} to wrap around the comment text.
+
+2. Render HTML Elements to the DOM
+With React, we can render this JSX directly to the HTML DOM using React's rendering API known as ReactDOM.
+ReactDOM offers a simple method to render React elements to the DOM which looks like this: ReactDOM.render(componentToRender, targetNode)
+
+3.Define an HTML Class in JSX
+One key difference in JSX is that you can no longer use the word class to define HTML classes. This is because class is a reserved word in JavaScript. Instead, JSX uses className.In fact, the naming convention for all HTML attributes and event references in JSX become camelCase. For example, a click event in JSX is onClick, instead of onclick
+
+4.Learn About Self-Closing JSX Tags
+Void elements(br, hr..)
+In JSX, the rules are a little different. Any JSX element can be written with a self-closing tag, and every element must be closed. The line-break tag, for example, must always be written as <br /> in order to be valid JSX that can be transpiled. A <div>, on the other hand, can be written as <div /> or <div></div>
+
+--------------------------------------------------
+B.)Components
+Components are the core of React. Everything in React is a component. There are two ways to create a React component.
+The first way is to use a JavaScript function. Defining a component in this way creates a stateless functional component.
+In this function returns either JSX or null and Function‘s name should starts with Capital letter.
+The other way to define a React component is with the ES6 class syntax. In the following example, Kitten extends React.Component
+
+
+</div>
+        </section>
+
+        
+
                
